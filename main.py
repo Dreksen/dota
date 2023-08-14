@@ -2,7 +2,7 @@ import requests
 import telebot
 
 
-token = '6352398845:AAGPJChFGJCDuLYPnv4-ppJrm6_tCxu-bYM'
+token = ''
 bot = telebot.TeleBot(token)
 r = requests.get("https://api.opendota.com/api/heroes")
 heroes = r.json()

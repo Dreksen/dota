@@ -56,11 +56,11 @@ scaler = MinMaxScaler()
 x_train = scaler.fit_transform(x_train)
 x_validation = scaler.fit_transform(x_validation)
 
-clf = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=322)
+clf = RandomForestClassifier(n_estimators=200, max_depth=7, random_state=228)
 clf.fit(x_train, y_train)
+
 print('Train Accuracy:', accuracy_score(y_train, clf.predict(x_train)))
 print('Validation Accuracy:', accuracy_score(y_validation, clf.predict(x_validation)))
-
 
 
 
